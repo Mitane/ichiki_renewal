@@ -1,5 +1,8 @@
 # ホームページリニューアル
 
+## STG環境
+http://ichiki.gozaru.jp/
+
 ## 階層構造
 ~~~
  /
@@ -47,7 +50,7 @@ $ git clone https://github.com/Mitane/ichiki_renewal.git
 ~~~
 
 2. node.jsのインストール
-http://qiita.com/sinmetal/items/154e81823f386279b33c
+  + http://qiita.com/sinmetal/items/154e81823f386279b33c
 
 3. node_modulesのインストール
 ~~~
