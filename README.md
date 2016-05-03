@@ -7,17 +7,17 @@ http://ichiki.gozaru.jp/
 ~~~
  /
 　├ dev/
-　│　├ **.html
+　│　├ **.ejs
 　│　├ _common/
 　│　├ css/
 　│　├ img/
-　│　├ js//
+　│　├ js/
 　│　└ pdf/
 　├ release/
 　│　├ **.html
 　│　├ css/
 　│　├ img/
-　│　├ js//
+　│　├ js/
 　│　└ pdf/
 　│ gulpfile.js
 　│ package.json

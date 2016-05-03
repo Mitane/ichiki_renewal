@@ -10,6 +10,7 @@ gulp.task('ejs', function(){
 
 gulp.task( 'copy', function() {
    gulp.src('dev/img/**').pipe(gulp.dest('./release/img'));
+   gulp.src('dev/pdf/**').pipe(gulp.dest('./release/pdf'));
    gulp.src('dev/css/**').pipe(gulp.dest('./release/css'));
    gulp.src('dev/js/**').pipe(gulp.dest('./release/js'));
 } );
