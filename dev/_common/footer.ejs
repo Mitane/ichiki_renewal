@@ -4,4 +4,12 @@
 </footer>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
-<script src="js/animenu.js"></script>
+<script>
+$(function(){
+    $('#menu li').hover(function(){
+        $("ul:not(:animated)", this).slideDown();
+    }, function(){
+        $("ul.child",this).slideUp();
+    });
+});
+</script>
