@@ -1,0 +1,354 @@
+@charset "UTF-8";
+
+#img-slide {
+  width: 980px;
+  margin:50px auto;
+  position: relative;
+}
+#img-slide a img {
+  position: absolute;
+  box-shadow: 0px 5px 15px rgba(200,200,200,0.5), 20px 10px 30px rgba(200,200,200,0.5), -20px 10px 30px rgba(200,200,200,0.5);
+  border: 0;
+}
+#img1 {
+  -webkit-animation: 'slide' 20s ease-in-out 0s infinite normal
+}
+#img2 {
+  -webkit-animation: 'slide' 20s ease-in-out -5s infinite normal
+}
+#img3 {
+  -webkit-animation: 'slide' 20s ease-in-out -10s infinite normal
+}
+#img4 {
+  -webkit-animation: 'slide' 20s ease-in-out -15s infinite normal
+}
+#img1:hover, #img2:hover, #img3:hover, #img4:hover {
+  z-index: 50;
+}
+@-webkit-keyframes 'slide' {
+  0% { top: 20px; left: 200px; width: 580px; z-index: 4; }  /*�^����*/
+ 20% { top: 20px; left: 200px; width: 580px; z-index: 4; }  /*�^����*/
+ 25% { top: 50px; left: 480px; width: 500px; z-index: 3; }  /*�E��*/
+ 45% { top: 50px; left: 480px; width: 500px; z-index: 3; }  /*�E��*/
+ 50% { top: 50px; left: 200px; width: 500px; z-index: 1; }  /*����*/
+ 70% { top: 50px; left: 200px; width: 500px; z-index: 1; }  /*����*/
+ 75% { top: 50px; left:   0px; width: 500px; z-index: 3; }  /*����*/
+ 95% { top: 50px; left:   0px; width: 500px; z-index: 3; }  /*����*/
+100% { top: 20px; left: 200px; width: 580px; z-index: 4; }  /*�^����*/
+}
+/* ========BASIC======== */
+html {
+   overflow-y:scroll;
+}
+
+body {
+/*background-image : url("images/kinari.gif");*/
+   margin:0;
+   padding:0;
+   line-height:1.6;
+   letter-spacing:1px;
+   font-family:Verdana, Helvetica, sans-serif;
+   font-size:13px;
+   color:#333;
+}
+
+br {
+   letter-spacing:normal;
+}
+
+a {
+   color:#E79E00;
+   text-decoration:none;
+}
+
+a:hover {
+   color:#E79E00;
+   text-decoration:underline;
+}
+
+img {
+   border:0;
+   vertical-align:bottom;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   margin:0;
+}
+
+hr{width:779px}
+
+/* ========TEMPLATE LAYOUT======== */
+#header {
+   width:779px;
+   margin:0 auto;
+   position:relative;
+   padding:0 5px;
+}
+
+#pr {
+   position:absolute;
+   width:460px;
+   left:300px;
+   top:30px;
+}
+
+#menu {
+   width:100%;
+   float:left;
+   margin-bottom:2px;
+   background:url("images/bg_menu.gif") 0 100% repeat-x;
+}
+
+#contents {background:#fff;
+   clear:both;
+   width:779px;
+   margin:0 auto;
+}
+
+#main {background:#fff;
+   float:right;
+   width:539px;
+}
+
+#sub {background:#fff;
+   float:left;
+   width:220px;
+}
+
+#pageTop {
+   clear:both;
+}
+
+#footer {
+   clear:both;
+   background:#EBEADD;
+}
+
+
+/* ========HEADER CUSTOMIZE======== */
+#header h1 {
+   margin:0;
+   padding:10px;
+   font-size:24px;
+   color:#fff;
+   line-height:70px;
+}
+
+#header h1 a {
+   color:#333;
+}
+
+#header h1 a:hover {
+   color:#666;
+}
+
+#header #pr p {
+   margin:0;
+}
+
+
+/* ========MENU CUSTOMIZE======== */
+#menu ul {
+   width:779px;
+   margin:0 auto;
+   padding:0;
+}
+
+#menu li {
+   float:left;
+   color:#333;
+   text-align:center;
+   list-style-type:none;
+}
+
+#menu li a {
+   display:block;
+   width:155px;
+   color:#5A5132;
+   line-height:50px;
+   border-left:1px solid #D8D8D8;
+}
+
+#menu li.home a {
+   border:none;
+}
+
+#menu li a.active {
+   background:#f4f3e8;
+}
+
+#menu li a:hover {
+   color:#333;
+   background:#f4f3e8;
+   text-decoration:none;
+}
+
+
+/* ========MAIN CONTENTS CUSTOMIZE======== */
+#main h2 {
+   margin-bottom:8px;
+   padding:2px 2px 2px 0;
+   color:#5A5132;
+   font-size:15px;
+   font-weight:bold;
+   border-bottom:3px double #5A5132;
+}
+
+#main h3 {
+   margin-bottom:3px;
+   padding-left:15px;
+   font-size:14px;
+   border-bottom:1px dotted #ddd;
+   background:#fff url("images/bg_h3.gif") 0 50% no-repeat;
+}
+
+#main h4 {
+   margin-bottom:2px;
+   font-size:14px;
+}
+
+#main h5 {
+   margin-bottom:2px;
+   padding:2px;
+   font-size:13px;
+   color:#fff;
+   background:#73C700;
+}
+
+#main h6 {
+   margin-bottom:2px;
+   font-size:13px;
+   border-bottom:2px solid #333;
+}
+
+#main p {
+   margin:0 0 1em 0;
+}
+
+#main dt {
+   margin-bottom:3px;
+}
+
+#main dd {
+   padding:0;
+   margin:0 0 0.5em 1em;
+   padding:3px;
+   background:#f4f3e8;
+}
+
+/* INFORMATION CUSTOMIZE */
+* html body #main dl.information dd div {
+   display:inline-block;
+}
+
+#main dl.information dt {
+   float:left;
+   width:10em;
+   margin:0;
+   padding:0;
+}
+
+#main dl.information dd {
+   margin:0 0 0.5em 10em;
+   padding:0;
+   background:transparent;
+}
+
+#main table {
+   width:100%;
+   border-collapse: collapse;
+}
+
+#main table th {
+   padding:5px;
+   font-size:12px;
+   text-align:left;
+   border:1px solid #ddd;
+   background:#dcd9b4;
+}
+
+#main table td {
+   padding:5px;
+   font-size:12px;
+   text-align:left;
+   border:1px solid #ddd;
+}
+
+
+/* ========SUBCONTENTS CUSTOMIZE======== */
+#sub .section {
+   margin-bottom:10px;
+}
+
+#sub h2 {
+   padding:3px;
+   font-size:14px;
+   font-weight:bold;
+   color:#5A5132;
+   padding-left:10px;
+   background:#fff url("images/bg_submenu.gif") 0 50% no-repeat;
+   border-bottom:1px solid #E7E7E7;
+}
+
+#sub ul {
+   margin:0;
+   padding:0;
+}
+
+#sub li {
+   line-height:1.4;
+   border-bottom:1px solid #ddd;
+   list-style:none;
+   
+}
+
+#sub li a {
+   display:block;
+   padding-left:20px;
+   color:#333;
+   line-height:3.0;
+   background:url("images/bg_sub_list.gif") 5px 15px no-repeat;
+}
+
+
+/* ========PAGETOP CUSTOMIZE========= */
+#pageTop {
+   padding:10px 0;
+   text-align:right;
+}
+
+#pageTop a {
+   padding:0 0 0 12px;
+   background:url("images/bg_pagetop.gif") 0 50% no-repeat;
+   color:#333;
+}
+
+
+/* ========FOOTMENU CUSTOMIZE======== */
+#footMenu ul {
+   margin:0 0 10px 0;
+   padding:10px 0 0 0;
+   text-align:right;
+   background:url("images/bg_dotline.gif") 0 0 repeat-x;
+}
+
+#footMenu li {
+   display:inline;
+   margin:0 0 0 10px;
+   list-style:none;
+}
+
+#footMenu li a {
+   padding-left:10px;
+   color:#333;
+   background: url(images/bg_footmenu.gif) 0 50% no-repeat;
+}
+
+
+/* ========FOOTER CUSTOMIZE======== */
+.copyright {
+   padding:10px 0;
+   font-style:normal;
+   font-size:11px;
+   text-align:center;
+}
