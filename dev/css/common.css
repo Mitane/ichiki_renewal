@@ -55,7 +55,7 @@ html {
 }
 
 body {
- line-height: 1.7;
+ line-height: 2;
  color: #333;
  font-size: 14px;
  text-align: left;
@@ -64,7 +64,11 @@ body {
 header{
   padding-top: 1rem;
   margin-bottom: 2rem;
-  background-image: url("../img/footer_bg.jpg");
+  /*background-image: url("../img/footer_bg.jpg");*/
+}
+
+.fld__logo{
+  margin: 0rem 0 .5rem 130px;
 }
 
 header a{
@@ -83,8 +87,7 @@ footer {
 }
 
 p{
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin: 1rem 0;
 }
 
 table {
@@ -116,7 +119,11 @@ dd{
 
 figure{
   font-size: .8rem;
-  width: 100%;
+  /*width: 100%;*/
+  text-align: center;
+}
+
+figcaption{
   text-align: center;
 }
 
